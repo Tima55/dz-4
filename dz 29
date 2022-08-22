@@ -1,0 +1,10 @@
+//  Напишите программу, которая задаёт массив из N элементов и выводит их на экран.
+Console.Write(" N элементов:  ");
+int N   = Convert.ToInt32(Console.ReadLine());
+const int MaxElemVal = 1000;
+int[] arr = new int[N];
+arr = Enumerable.Range(0, N).Select(s => new Random(s).Next(MaxElemVal)).ToArray();
+for(int i=0;i<arr.Length;i++)
+{
+   arr[i] = Convert.ToInt32(Console.ReadLine());
+}
